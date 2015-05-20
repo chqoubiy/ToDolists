@@ -1,0 +1,7 @@
+parameters:
+#    td_todo.example.class: TD\TodoBundle\Example
+
+services:
+#    td_todo.example:
+#        class: %td_todo.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

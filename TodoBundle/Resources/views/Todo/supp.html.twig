@@ -1,0 +1,16 @@
+ <h2>Supprimer une tache</h2>
+
+  <p>
+    Etes-vous certain de vouloir supprimer la tache "{{ tache.nom }}" ?
+  </p>
+
+  {# On met l'id de la tache dans la route de l'action du formulaire #}
+  <form action="{{ path('td_todo_supp', {'id': tache.id}) }}" method="post">
+    <a href="{{ path('td_todo_homepage', {'id': tache.id}) }}" class="btn">
+      <i class="icon-chevron-left"></i>
+      Retour à l'Acceuil
+    </a>
+    <input type="submit" value="Supprimer" class="btn btn-danger" />
+    {{ form_rest(form) }}
+  </form>
+

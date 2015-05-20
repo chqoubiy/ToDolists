@@ -1,0 +1,26 @@
+﻿<html>
+	<body>
+		<h1> TODO.COM </h1>
+		
+		</br>
+		<p> Ajouter une tache :</p>
+		<a href="{{ path('td_todo_add') }}">Ajouter une Tache</a>
+		<br/>
+		<p> A faire : </p>
+		</br>
+		<ul>
+			{% for tachs in tache %}
+				
+				<li><a href="{{ path('td_todo_view', { 'id' : tachs.id } ) }}">{{ tachs.nom }}</a></li>
+				</br>
+				<a href="{{ path('td_todo_modifier', { 'id' : tachs.id } ) }}">modifir cette Tache</a>
+				<a href="{{ path('td_todo_supp', { 'id' : tachs.id } ) }}">supprimer cette Tache</a>
+			{% else %}
+				<p>Aucune tache n'a été trouvée.</p>
+			{% endfor %}
+		</ul>
+		
+		<br/>
+		<p> copyright ... <p/>
+	</body>
+</html>

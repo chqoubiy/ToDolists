@@ -1,0 +1,19 @@
+TD\TodoBundle\Entity\Tache:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: '255'
+        libeller:
+            type: string
+            length: '255'
+        date:
+            type: datetime
+    lifecycleCallbacks: {  }

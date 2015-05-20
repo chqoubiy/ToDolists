@@ -1,0 +1,15 @@
+td_todo_homepage:
+    path:     /index
+    defaults: { _controller: TDTodoBundle:Todo:index }
+td_todo_view:
+    path:     /{id}
+    defaults: { _controller: TDTodoBundle:Todo:view }
+td_todo_add:
+    path:     /ajouter/add
+    defaults: { _controller: TDTodoBundle:Todo:add }
+td_todo_modifier:
+    path:     /modifier/{id}
+    defaults: { _controller: TDTodoBundle:Todo:edit }
+td_todo_supp:
+    path:     /supp/{id}
+    defaults: { _controller: TDTodoBundle:Todo:supp }
